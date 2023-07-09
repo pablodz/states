@@ -17,7 +17,7 @@ jobs:
         uses: actions/github-script@v4
         with:
           script: |
-            const timeToWait = 600000; // 10 minutes in milliseconds
+            const timeToWait = 420000; // 7 minutes in milliseconds
             await new Promise(resolve => setTimeout(resolve, timeToWait));
 
       - name: Read and update state file
